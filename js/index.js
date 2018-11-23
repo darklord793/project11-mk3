@@ -22,6 +22,7 @@ alert(resultСycle);
 const b = prompt('Enter position number in the Fibonacci line. To calculate in Massif');
 
     let fibonacciMassif= [0, 1, 1,];
+    let i = 0;
     if (b === 1) {
         alert("Under the number in the Fibonacci line is the number : " + fibonacciMassif[1]);
     } else if (b === 2) { 
@@ -30,6 +31,7 @@ const b = prompt('Enter position number in the Fibonacci line. To calculate in M
     for (i = 3; i <= b; i++) {
     fibonacciMassif[i].push (fibonacciMassif[i - 1] + fibonacciMassif[i - 2]);
         alert("Under the number in the Fibonacci line is the number : " + fibonacciMassif[i]);
+    }
     }
 
 let resultMassif = fibonacciMassif(b);
@@ -46,6 +48,5 @@ const c = prompt('Enter position number in the Fibonacci line. To calculate in R
     return fibonacciRecursion(c - 1) + fibonacciRecursion(c - 2);
     }
     }
-
-let resultRecursion = fibonacciRecursion(с);
+let resultRecursion = fibonacciRecursion(c);
 alert(resultRecursion);
