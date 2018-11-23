@@ -44,7 +44,7 @@ const c = prompt('Enter position number in the Fibonacci line. To calculate in R
     } else if (c === 2) { 
         return 1;
     } else {
-    return c <= 1 ? c : fibonacciRecursion(c - 1) + fibonacciRecursion(c - 2);
+    return fibonacciRecursion(c - 1) + fibonacciRecursion(c - 2);
     }
     }
 
