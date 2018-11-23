@@ -3,7 +3,6 @@ const a = prompt('Enter position number in the Fibonacci line. To calculate in –
 function fibonacci–°ycle(a) {
     let first = 1;
     let second = 1;
-    let next = 0;
     if (a === 1) {
         return "Under the number a :" + a + ", in the Fibonacci lsine is the number :" + first;
     } else if (a === 2) { 
